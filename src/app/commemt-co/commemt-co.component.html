@@ -1,0 +1,22 @@
+<table class="table table-light table-hover">
+    <tr>
+        <td> postId</td>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>body</th>
+
+
+    </tr>
+
+    <tr *ngFor="let e of GetCom">
+        <td>{{e.postId }}</td>
+        <td>{{e.id}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.email}}</td>
+        <td>{{e.body}}</td>
+
+
+    </tr>
+
+</table>

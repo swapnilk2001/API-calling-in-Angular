@@ -1,0 +1,43 @@
+<!-- <div class="container" style="display: block; margin: 0 auto;"> -->
+<!-- <div *ngFor="let n of getArtilce">
+        <h2>{{n.author}}</h2>
+        <p>{{n.title}}</p>
+        <p>{{n.description}}</p>
+        <img [src]="n.urlToImage" height="300px" width="500px" style="display: block; margin: 0 auto;">
+        <hr>
+
+    </div>
+ -->
+
+
+<!-- <hr> -->
+
+<!-- <form #addJson="ngForm" (ngSubmit)="postMethod(addJson.value)">
+        <input type="number" ngModel name="id" placeholder="enter id"><br><br>
+        <input type="text" ngModel name="title" placeholder="enter title"><br><br>
+        <input type="text" ngModel name="body" placeholder="enter body"><br><br>
+        <button>Add</button>
+
+    </form> -->
+
+<div class="table table-dark table-striped">
+    <table class="table table-light table-hover">
+        <tr>
+            <td> ID</td>
+            <th>title</th>
+            <th>Body</th>
+
+
+        </tr>
+
+        <tr *ngFor="let e of getArtilce">
+            <td>{{e.id }}</td>
+            <td>{{e.title}}</td>
+            <td>{{e.body}}</td>
+
+
+        </tr>
+
+    </table>
+
+</div>
